@@ -20,8 +20,8 @@
       <description>1.安装
   需要提前安装git，并拥有一个github账号。 widows需要在https://github.com/gohugoio/hugo/releases处下载hugo运行需要的二级制码hugo_0.57.2_Windows-64bit.zip，并解压配置系统变量。
 在命令行使用如下命令确认是否安装正确：
-hugo version   打印如下内容表示安装成功：
-Hugo Static Site Generator v0.57.2-A849CB2D windows/amd64 BuildDate: 2019-08-17T17:54:13Z  2. 生成站点 切换至想要创建的目录，运行：
+hugo version  打印如下内容表示安装成功：
+Hugo Static Site Generator v0.57.2-A849CB2D windows/amd64 BuildDate: 2019-08-17T17:54:13Z   2. 生成站点 切换至想要创建的目录，运行：
 hugo new site myblog  打印如下内容表示生成站点成功：
 Congratulations! Your new Hugo site is created  3. 下载主题 cd myblog git clone https://github.com/vaga/hugo-theme-m10c.git themes/m10c  打印如下内容表示主题下载成功：
 Cloning into &#39;themes/m10c&#39;... remote: Enumerating objects: 18, done. remote: Counting objects: 100% (18/18), done. remote: Compressing objects: 100% (17/17), done. remote: Total 265 (delta 4), reused 11 (delta 1), pack-reused 247 Receiving objects: 65% (173/265), 420.</description>
