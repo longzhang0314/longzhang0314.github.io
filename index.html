@@ -6,16 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Hexo</title>
+  <title>Long</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+  <meta name="description" content="一枚开发小白的博客">
+<meta name="keywords" content="java,后端,程序猿">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Long">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="Long">
+<meta property="og:description" content="一枚开发小白的博客">
 <meta property="og:locale" content="en">
 <meta name="twitter:card" content="summary">
   
-    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="Long" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -45,7 +48,7 @@
 			<img src="" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">John Doe</a></h1>
+		  <h1 class="header-author"><a href="/">Long</a></h1>
 		</hgroup>
 		
 
@@ -103,7 +106,7 @@
 				<img src="" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">John Doe</h1>
+			  <h1 class="header-author js-header-author">Long</h1>
 			</hgroup>
 			
 			
@@ -150,6 +153,81 @@
           </div>
           <div id="js-content" class="content-ll">
             
+  
+    <article id="post-Linux基本操作命令" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/10/19/Linux%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4/">Linux基本操作命令</a>
+    </h1>
+  
+
+        
+        <a href="/2019/10/19/Linux%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4/" class="archive-article-date">
+  	<time datetime="2019-10-19T06:30:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-19</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h5 id="常用的grep-查找方式"><a href="#常用的grep-查找方式" class="headerlink" title="常用的grep 查找方式"></a>常用的grep 查找方式</h5><ol>
+<li><p><strong>单个文件搜索</strong><br>grep 字符串 a.log</p>
+</li>
+<li><p><strong>多个文件搜索</strong><br>grep 字符串 *.log</p>
+</li>
+<li><p><strong>上下文多少行</strong><br>-C n 前后 多少行，  -A n  之后n行， -B n 之前n行<br>grep Exce base.log  -C 20<br>grep Exce base.log  -A 20<br>grep Exce base.log  -B 20</p>
+</li>
+<li><p><strong>管道，在上个结果的基础上继续搜索  =  and 条件</strong><br>grep 字符串 *.log  | grep 第二个条件</p>
+</li>
+<li><p><strong>或条件</strong></p>
+<p>grep -E ‘广点通|今日头条’ base.log </p>
+</li>
+</ol>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/10/19/Linux%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
   
     <article id="post-支付系统对于异步通知的处理" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -315,6 +393,7 @@
 <p><strong>1. 尽量使用@PostMapping注解，而不是@RequestMapping(value = “url”,method = RequestMethod.POST)</strong></p>
 <p><strong>2. 使用@RequestParam注解时必须要在后面加上参数名</strong></p>
 <p><strong>3. Controller层互相调用不要忘记@RequestBody注解</strong></p>
+<p><strong>4. 接口和实现类都需要加@RequestBody</strong></p>
 
       
 
@@ -611,7 +690,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2019 John Doe
+    		&copy; 2019 Long
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
