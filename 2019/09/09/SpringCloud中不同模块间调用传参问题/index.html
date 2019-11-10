@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="Long">
 <meta property="og:description" content="不同模块间调用时，通过Feign客户端组件调用其他服务，出现参数传过去后变成null的问题。注意如下： 1. 尽量使用@PostMapping注解，而不是@RequestMapping(value = “url”,method = RequestMethod.POST) 2. 使用@RequestParam注解时必须要在后面加上参数名 3. Controller层互相调用不要忘记@RequestB">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-10-19T06:28:23.618Z">
+<meta property="og:updated_time" content="2019-11-10T07:41:16.617Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Long" type="application/atom+xml">
@@ -178,6 +178,7 @@
 <p><strong>2. 使用@RequestParam注解时必须要在后面加上参数名</strong></p>
 <p><strong>3. Controller层互相调用不要忘记@RequestBody注解</strong></p>
 <p><strong>4. 接口和实现类都需要加@RequestBody</strong></p>
+<p><strong>5. 如果使用@RequestParam注解，只需要在接口处添加，不要在实现类上添加该注解</strong></p>
 
       
 
