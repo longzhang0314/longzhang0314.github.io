@@ -8,21 +8,16 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Git新建一个分支 | Long</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="参考：https:&#x2F;&#x2F;www.cnblogs.com&#x2F;kaerxifa&#x2F;p&#x2F;11045573.html  进入本地git仓库目录，使用git branch指令，发现只有master分支   使用git branch 分支名来创建分支，创建完成后再次使用git branch查看，发现本地已经多出了一个新建的分支。     此时远程仓库并没有这个分支，我们需要使用git push origin 分支名">
+  <meta name="description" content="参考：https:&#x2F;&#x2F;www.cnblogs.com&#x2F;kaerxifa&#x2F;p&#x2F;11045573.html  进入本地git仓库目录，使用git branch指令，发现只有master分支 12git branch* master  使用git branch 分支名来创建分支，创建完成后再次使用git branch查看，发现本地已经多出了一个新建的分支。 1234输入：git branch 20190">
 <meta name="keywords" content="java,后端,程序猿">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Git新建一个分支">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;09&#x2F;04&#x2F;git%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%88%86%E6%94%AF&#x2F;index.html">
 <meta property="og:site_name" content="Long">
-<meta property="og:description" content="参考：https:&#x2F;&#x2F;www.cnblogs.com&#x2F;kaerxifa&#x2F;p&#x2F;11045573.html  进入本地git仓库目录，使用git branch指令，发现只有master分支   使用git branch 分支名来创建分支，创建完成后再次使用git branch查看，发现本地已经多出了一个新建的分支。     此时远程仓库并没有这个分支，我们需要使用git push origin 分支名">
+<meta property="og:description" content="参考：https:&#x2F;&#x2F;www.cnblogs.com&#x2F;kaerxifa&#x2F;p&#x2F;11045573.html  进入本地git仓库目录，使用git branch指令，发现只有master分支 12git branch* master  使用git branch 分支名来创建分支，创建完成后再次使用git branch查看，发现本地已经多出了一个新建的分支。 1234输入：git branch 20190">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="http:&#x2F;&#x2F;pxjmdt63v.bkt.clouddn.com&#x2F;images&#x2F;blog&#x2F;hugo&#x2F;git%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%88%86%E6%94%AF&#x2F;git%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%88%86%E6%94%AF_1.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;pxjmdt63v.bkt.clouddn.com&#x2F;images&#x2F;blog&#x2F;hugo&#x2F;git%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%88%86%E6%94%AF&#x2F;git%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%88%86%E6%94%AF_2.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;pxjmdt63v.bkt.clouddn.com&#x2F;images&#x2F;blog&#x2F;hugo&#x2F;git%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%88%86%E6%94%AF&#x2F;git%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%88%86%E6%94%AF_3.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;pxjmdt63v.bkt.clouddn.com&#x2F;images&#x2F;blog&#x2F;hugo&#x2F;git%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%88%86%E6%94%AF&#x2F;git%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%88%86%E6%94%AF_4.png">
-<meta property="og:updated_time" content="2019-10-19T03:07:50.746Z">
+<meta property="og:updated_time" content="2020-03-31T05:55:45.962Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http:&#x2F;&#x2F;pxjmdt63v.bkt.clouddn.com&#x2F;images&#x2F;blog&#x2F;hugo&#x2F;git%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%88%86%E6%94%AF&#x2F;git%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%88%86%E6%94%AF_1.png">
   
     <link rel="alternative" href="/atom.xml" title="Long" type="application/atom+xml">
   
@@ -181,18 +176,22 @@
         <p>参考：<a href="https://www.cnblogs.com/kaerxifa/p/11045573.html" target="_blank" rel="noopener">https://www.cnblogs.com/kaerxifa/p/11045573.html</a></p>
 <ol>
 <li><p>进入本地git仓库目录，使用git branch指令，发现只有master分支</p>
-<p><img src="http://pxjmdt63v.bkt.clouddn.com/images/blog/hugo/git%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%88%86%E6%94%AF/git%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%88%86%E6%94%AF_1.png" alt="git新建一个分支_1"></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git branch</span><br><span class="line">* master</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>使用git branch 分支名来创建分支，创建完成后再次使用git branch查看，发现本地已经多出了一个新建的分支。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">输入：git branch 201909</span><br><span class="line">输入：git branch</span><br><span class="line">输出：201909</span><br><span class="line">    *master</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>此时远程仓库并没有这个分支，我们需要使用git push origin 分支名 命令将本地修改推送到远程服务器上。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">输入：git push origin 201909</span><br></pre></td></tr></table></figure>
+
+
+
 </li>
 </ol>
-<p><img src="http://pxjmdt63v.bkt.clouddn.com/images/blog/hugo/git%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%88%86%E6%94%AF/git%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%88%86%E6%94%AF_2.png" alt="git新建一个分支_2"></p>
-<ol start="3">
-<li><p>此时远程仓库并没有这个分支，我们需要使用git push origin 分支名 命令将本地修改推送到远程服务器上。</p>
-<p><img src="http://pxjmdt63v.bkt.clouddn.com/images/blog/hugo/git%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%88%86%E6%94%AF/git%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%88%86%E6%94%AF_3.png" alt="git新建一个分支_3"></p>
-</li>
+<ol start="4">
 <li><p>push完成后就可以在远程服务上看到新建的分支了（原本是1 branches）。</p>
-<p><img src="http://pxjmdt63v.bkt.clouddn.com/images/blog/hugo/git%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%88%86%E6%94%AF/git%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%88%86%E6%94%AF_4.png" alt="git新建一个分支_4"></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">2 branchches</span><br></pre></td></tr></table></figure>
+
 </li>
 </ol>
 
@@ -342,7 +341,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2019 Long
+    		&copy; 2020 Long
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
